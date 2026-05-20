@@ -22,9 +22,9 @@ import { PERSONAL_INFO } from "../data";
 export default function WhatsAppWidget() {
   const [isOpen, setIsOpen] = useState(false);
   const [message, setMessage] = useState("");
-  const [whatsappNumber, setWhatsappNumber] = useState("919000000000"); // default realistic Indian country code placeholder
+  const [whatsappNumber, setWhatsappNumber] = useState("919074319013"); // default realistic Indian country code placeholder
   const [isConfiguring, setIsConfiguring] = useState(false);
-  const [inputNumber, setInputNumber] = useState("919000000000");
+  const [inputNumber, setInputNumber] = useState("919074319013");
   const [badgeAnimated, setBadgeAnimated] = useState(true);
 
   // Suggested quick-prompt chips

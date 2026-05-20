@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Syne:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Syne", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Orbitron", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Custom global rules and glassmorphism elements */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: #050510;
+  }
+  
+  body {
+    font-family: var(--font-sans);
+    color: #e8eaf6;
+    overflow-x: hidden;
+  }
+
+  /* Custom styling for sci-fi scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #050510;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #1e1e38;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #00f5ff;
+    box-shadow: 0 0 10px #00f5ff;
+  }
+}
+
+/* Keyframe animations for futuristic background and glitch effect */
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(0, 245, 255, 0.4), inset 0 0 5px rgba(0, 245, 255, 0.2);
+    border-color: rgba(0, 245, 255, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(191, 0, 255, 0.6), inset 0 0 10px rgba(191, 0, 255, 0.3);
+    border-color: rgba(191, 0, 255, 0.8);
+  }
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: inset(40% 0 61% 0);
+  }
+  20% {
+    clip-path: inset(92% 0 1% 0);
+  }
+  40% {
+    clip-path: inset(25% 0 58% 0);
+  }
+  60% {
+    clip-path: inset(80% 0 5% 0);
+  }
+  80% {
+    clip-path: inset(11% 0 75% 0);
+  }
+  100% {
+    clip-path: inset(50% 0 30% 0);
+  }
+}
+
+@keyframes floatParticles {
+  0%, 100% {
+    transform: translateY(0px) translateX(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) translateX(10px) rotate(180deg);
+  }
+}
+
+/* Glassmorphism glass utility */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.glass-panel-heavy {
+  background: rgba(5, 5, 16, 0.75);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+.glow-cyan {
+  text-shadow: 0 0 8px rgba(0, 245, 255, 0.7), 0 0 20px rgba(0, 245, 255, 0.3);
+}
+
+.glow-purple {
+  text-shadow: 0 0 8px rgba(191, 0, 255, 0.7), 0 0 20px rgba(191, 0, 255, 0.3);
+}
+
+.border-glow {
+  animation: pulseGlow 4s infinite ease-in-out;
+}
+

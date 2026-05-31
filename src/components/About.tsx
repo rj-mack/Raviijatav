@@ -1,8 +1,3 @@
-/**
- * @license
- * SPDX-License-Identifier: Apache-2.0
- */
-
 import { useEffect, useState, useRef } from "react";
 import { motion, useInView } from "motion/react";
 import { MapPin, Mail, Phone, Calendar, User, ShieldCheck } from "lucide-react";

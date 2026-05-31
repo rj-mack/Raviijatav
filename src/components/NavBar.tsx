@@ -1,8 +1,3 @@
-/**
- * @license
- * SPDX-License-Identifier: Apache-2.0
- */
-
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
@@ -33,6 +28,7 @@ export default function NavBar({ activeSection }: NavBarProps) {
     { label: "Home", href: "#home", id: "home" },
     { label: "About", href: "#about", id: "about" },
     { label: "Skills", href: "#skills", id: "skills" },
+    { label: "WorkExperince", href: "#experience", id: "experience" },
     { label: "Education", href: "#education", id: "education" },
     { label: "Contact", href: "#contact", id: "contact" }
   ];

@@ -1,10 +1,10 @@
 import { useRef } from "react";
 import { motion, useInView } from "motion/react";
 import { GraduationCap, Award, BookOpen } from "lucide-react";
-import { EDUCATION_HISTORY } from "../data";
+import { Work_HISTORY } from "../data";
 
 interface TimelineCardProps {
-  entry: typeof EDUCATION_HISTORY[0];
+  entry: typeof Work_HISTORY[0];
   index: number;
   key?: number;
 }
@@ -54,7 +54,7 @@ function TimelineCard({ entry, index }: TimelineCardProps) {
               {icons[index % icons.length]}
             </div>
             <span className="font-mono text-[10px] tracking-widest text-[#00f5ff] uppercase">
-              SECTOR {index + 1} // ACADEMICS
+              company {index + 1} // 
             </span>
           </div>
           <span className="font-mono text-xs text-[#bf00ff] font-semibold bg-[#bf00ff]/5 border border-[#bf00ff]/20 px-3 py-1 rounded-full shadow-[0_0_10px_rgba(191,0,255,0.05)]">
@@ -64,17 +64,14 @@ function TimelineCard({ entry, index }: TimelineCardProps) {
 
         {/* Institution and Degree */}
         <h4 className="font-display text-lg font-bold text-white mb-1 group-hover:text-[#00f5ff] transition-colors">
-          {entry.institution}
+          {entry.company}
         </h4>
         <h5 className="font-sans text-sm font-semibold text-[#7986a0] mb-4">
-          {entry.degree}
+          {entry.role}
         </h5>
 
-        {/* GPA Grade Info Tag */}
-        <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-white/[0.03] border border-white/5 font-mono text-xxs text-[#e8eaf6] mb-4">
-          <span className="h-1.5 w-1.5 rounded-full bg-[#00f5ff]" />
-          {entry.grade}
-        </div>
+   
+       
 
         {/* Supporting Description */}
         <p className="font-sans text-xs leading-relaxed text-[#7986a0]">
@@ -90,11 +87,11 @@ function TimelineCard({ entry, index }: TimelineCardProps) {
   );
 }
 
-export default function Education() {
+export default function WorkExperince () {
   const containerRef = useRef<HTMLDivElement>(null);
 
   return (
-    <section id="education" className="relative w-full py-24 bg-[#050510]">
+    <section id="experience" className="relative w-full py-24 bg-[#050510]">
       {/* Visual background lights */}
       <div className="absolute top-[30%] left-[10%] w-80 h-80 bg-[#00f5ff]/3 rounded-full blur-[110px] pointer-events-none" />
       <div className="absolute bottom-[30%] right-[10%] w-80 h-80 bg-[#bf00ff]/3 rounded-full blur-[110px] pointer-events-none" />
@@ -104,10 +101,10 @@ export default function Education() {
         {/* Section Header */}
         <div className="flex flex-col items-center mb-20 text-center">
           <h2 className="font-display font-medium text-[#7986a0] text-xs sm:text-sm tracking-[0.3em] uppercase mb-2">
-            04 / HISTORICAL BLOCKS
+            03 / HISTORICAL BLOCKS
           </h2>
           <h3 className="font-display font-extrabold text-3xl sm:text-5xl text-white tracking-normal uppercase relative pb-4">
-            EDUCATION PATHWAY
+            Work-Experince
             <span className="absolute bottom-0 left-1/4 right-1/4 h-1 bg-gradient-to-r from-[#00f5ff] to-[#bf00ff] rounded-full shadow-[0_0_10px_#00f5ff]" />
           </h3>
         </div>
@@ -117,9 +114,9 @@ export default function Education() {
           {/* Central Vertical Neon Line */}
           <div className="absolute left-6 md:left-1/2 md:-translate-x-1/2 top-2 bottom-2 w-[2px] bg-gradient-to-b from-[#00f5ff] via-[#bf00ff] to-[#00f5ff] opacity-40 z-10" />
 
-          {/* Core Mapping of Educational Milestones */}
+          {/* Core Mapping of Experince  */}
           <div className="relative">
-            {EDUCATION_HISTORY.map((entry, index) => (
+            {Work_HISTORY.map((entry, index) => (
               <TimelineCard key={index} entry={entry} index={index} />
             ))}
           </div>

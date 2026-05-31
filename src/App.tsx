@@ -1,8 +1,3 @@
-/**
- * @license
- * SPDX-License-Identifier: Apache-2.0
- */
-
 import { useState, useEffect } from "react";
 import LoadingScreen from "./components/LoadingScreen";
 import NavBar from "./components/NavBar";
@@ -14,6 +9,7 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import WhatsAppWidget from "./components/WhatsAppWidget";
+import WorkExperince from "./components/WorkExperince";
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -23,7 +19,7 @@ export default function App() {
   useEffect(() => {
     if (isLoading) return;
 
-    const sections = ["home", "about", "skills", "education", "contact"];
+    const sections = ["home", "about", "skills","experience", "education", "contact"];
     const observerOptions = {
       root: null, // viewport
       rootMargin: "-25% 0px -60% 0px", // Trigger when element is near page focus center
@@ -70,6 +66,7 @@ export default function App() {
             <Hero />
             <About />
             <Skills />
+            <WorkExperince/>
             <Education />
             <Projects />
             <Contact />

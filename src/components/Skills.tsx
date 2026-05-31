@@ -1,8 +1,3 @@
-/**
- * @license
- * SPDX-License-Identifier: Apache-2.0
- */
-
 import { useState, useRef, useEffect } from "react";
 import { motion, useInView } from "motion/react";
 import { Cpu, BadgeAlert, Layers, Activity } from "lucide-react";

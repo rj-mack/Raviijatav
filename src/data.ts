@@ -1,8 +1,3 @@
-/**
- * @license
- * SPDX-License-Identifier: Apache-2.0
- */
-
 import { Skill, SoftSkill, EducationEntry, ProjectEntry, PersonalInfo } from "./types";
 
 export const DEVELOPER_NAME = "Ravi Jatav";
@@ -10,14 +5,14 @@ export const DEVELOPER_NAME = "Ravi Jatav";
 export const HERO_TITLES = [
   "Full Stack Developer",
   "UI/UX Architect",
-  "Problem Solver",
-  "Cloud Engineer"
+  "Mern Stack Developer",
+  "Backend Engineer"
 ];
 
 export const PERSONAL_INFO: PersonalInfo = {
   location: "Bhopal",
   email: "raviijatav@gmail.com",
-  phone: "+91 90000 00000",
+  phone: "+919074319013",
   github: "https://github.com/raviijatav",
   linkedin: "https://linkedin.com/in/raviijatav",
   twitter: "https://twitter.com/raviijatav",
@@ -36,116 +31,104 @@ export const TECHNICAL_SKILLS: Skill[] = [
   { name: "React / Next.js", percentage: 95 },
   { name: "TypeScript", percentage: 90 },
   { name: "Node.js", percentage: 85 },
-  { name: "Python / FastAPI", percentage: 80 },
+  { name: "Express", percentage: 80 },
   { name: "Tailwind CSS", percentage: 95 },
-  { name: "Docker & Cloud", percentage: 75 }
+  { name: "AWS", percentage: 75 },
+  { name: "MONGODB", percentage: 75},
+  { name: "POSTGRESQL", percentage: 75 }
 ];
 
 export const SOFT_SKILLS: SoftSkill[] = [
-  { name: "Critical Thinking", icon: "Brain" },
+  { name: "API Design", icon: "Brain" },
   { name: "Agile Leadership", icon: "GitBranch" },
   { name: "UI/UX Design Sense", icon: "Palette" },
-  { name: "Systems Architecture", icon: "Cpu" },
+  { name: "Product Strategy", icon: "Cpu" },
   { name: "Technical Communication", icon: "MessageSquare" },
   { name: "Empathetic Mentorship", icon: "Heart" },
-  { name: "Stochastic Optimizations", icon: "Zap" }
+  { name: "AI Integration", icon: "Zap" }
+];
+export const Work_HISTORY: ExperinceEntry[] = [
+  {
+    company: "Binary Logix Private Limited Bhopal",
+    role: "Front-End Deveploper",
+    yearRange: "2023 - 2023",
+    description: "Developing and maintaining full-stack web applications using MongoDB, Express.js, React.js, and Node.js (MERN). Building scalable RESTful APIs and integrating them seamlessly with dynamic React-based frontend."
+  },
+ {
+    company: "Mansvi Technology Bhopal",
+    role: "Mern-Stack Devploper",
+    yearRange: "2019 - 2023",
+    description: "Developing and maintaining full-stack web applications using MongoDB, Express.js, React.js, and Node.js (MERN). Building scalable RESTful APIs and integrating them seamlessly with dynamic React-based frontend."
+  },
+ {
+    company: "Rajya Shiksha Kendra Bhopal (Education Department)",
+    role: "Mern-Stack Deveploper",
+    yearRange: "2025 April - Present",
+    description: "Work at as junior Developer"
+  },
 ];
 
 export const EDUCATION_HISTORY: EducationEntry[] = [
   {
-    institution: "Stanford University",
+    institution: "Sam Collage of Engineering of Bhopal",
     degree: "B.S. in Computer Science",
-    yearRange: "2020 - 2024",
-    grade: "GPA: 3.92 / 4.00",
-    description: "Specialized in Artificial Intelligence and Human-Computer Interaction. Graduated with Honors. Core coursework: Software Engineering, Distributed Systems, Interactive Media."
+    yearRange: "2019 - 2023",
+    grade: "CPA: 7.2 / 10",
+    description: "Specialized in Computer Science Engineering and Human-Computer Interaction. Graduated with Honors. Core coursework: Software Engineering, Distributed Systems, Interactive Media."
   },
   {
-    institution: "Advanced Web Engineering Institute",
-    degree: "Certified Cloud Operations Specialist",
-    yearRange: "2024 - 2025",
-    grade: "Grade: Distinction (98%)",
-    description: "Advanced containerization systems, load balancing theory, cloud edge networking, database clustering, and security-first microservices styling."
+    institution: "Sheryians Coding School",
+    degree: "Certified Backend Specialist",
+    yearRange: "2023 – 6 Months",
+    grade: "",
+    description: "Mastered backend development through hands-on projects — built secure REST APIs with JWT-based authentication, handled real-time communication via Socket.io, managed file uploads using Multer, and integrated email workflows with Nodemailer. Engineered a full-scale Pinterest Clone as a capstone project, applying MVC architecture, session management, and database-driven dynamic rendering."
   },
   {
-    institution: "Metropolitan Design Lab",
-    degree: "Micro-Degree in Interface Ergonomics",
-    yearRange: "2025",
-    grade: "Grade: Pass with Praise",
-    description: "Immersive studies in modern typography, spatial design, responsive layouts, optical alignment, cognitive load management, and dark-mode color balance."
+    institution: "Self-Directed Learning Path",
+    degree: "DevOps Engineering — Upcoming",
+    yearRange: "Future",
+    grade: "",
+    description: "Planning to dive into the DevOps ecosystem — with goals to learn containerization using Docker, CI/CD pipeline automation, cloud infrastructure, and Linux server administration. The next step in evolving from a Backend Developer to a full production-ready engineer."
   }
 ];
 
 export const PORTFOLIO_PROJECTS: ProjectEntry[] = [
   {
-    title: "Quantum Ledger Dashboard",
-    description: "A dark-mode analytics terminal measuring decentralized transactional throughput with fluid live-chart feedback and custom state queries.",
-    tech: ["React", "TypeScript", "Recharts", "Tailwind CSS"],
-    image: "linear-gradient(135deg, #022329 0%, #0c001a 100%)",
-    demoUrl: "#projects",
-    codeUrl: "https://github.com"
+  title: "Style Lounge — Salon Platform",
+description: "A luxury salon web platform built with a modern editorial design system. Features a full services showcase, academy course section, interactive gallery with transformation previews, and a WhatsApp-integrated appointment booking flow. Appointments are managed via local storage for a seamless client experience — fully responsive and mobile-first optimized.",
+tech: ["React", "Tailwind CSS", "Local Storage", "WhatsApp API"],
+image: "linear-gradient(135deg, #1a0010 0%, #0d0015 100%)",
+demoUrl: "https://style-lounge.vercel.app",
+codeUrl: "https://github.com"
   },
   {
-    title: "AeroForm UI Studio",
-    description: "An interactive code generator translating user hand drawings into fully structured responsive styling using visual canvas processing.",
-    tech: ["Next.js", "Docker", "FastAPI", "lucide-react"],
+    title: "TourToPachmarhi",
+    description: "Developed TourToPachmarhi, a comprehensive One-Stop Solution travel platform using the MERN stack specifically designed to streamline Pachmarhi tourism",
+    tech: ["React,Node.js, Express.js, and MongoDB."],
     image: "linear-gradient(135deg, #100223 0%, #021a29 100%)",
-    demoUrl: "#projects",
+    demoUrl: "https://tourtopachmarhi.com/",
     codeUrl: "https://github.com"
   },
   {
-    title: "Vertex Collaborative Canvas",
-    description: "A multiplayer collaborative drawing viewport using real-time sync systems, custom vector path smoothing, and asset layers.",
-    tech: ["React", "motion", "Tailwind CSS", "Canvas API"],
+    title: "SS Pathcare Lab Website",
+    description: "Developed a full-stack diagnostic lab platform using MongoDB, Express.js, React (Vite), Redux, Tailwind CSS, and Node.js",
+    tech: ["React", "Node.js", "Tailwind CSS", "Mongodb","Express.js"],
     image: "linear-gradient(135deg, #23021f 0%, #00121c 100%)",
-    demoUrl: "#projects",
+    demoUrl: "https://sspathcare.com/",
     codeUrl: "https://github.com"
   }
 ];
 
-/**
- * Generates an actual, download-friendly local PDF representation of our Resume.
- * This ensures the CTA button serves a fully functioning download!
- */
+
+
 export function triggerResumeDownload() {
-  const resumeContent = `
-========================================
-RAVI JATAV - FULL-STACK DEVELOPER RESUME
-========================================
-Email: ${PERSONAL_INFO.email}
-Phone: ${PERSONAL_INFO.phone}
-Location: ${PERSONAL_INFO.location}
-Portfolio: Developed in AI Studio
+   const a = document.createElement("a");
 
-SUMMARY
-Highly skilled Full-Stack Developer specializing in futuristic visual designs, 
-responsive React engineering, and scalable server systems.
+  a.href = "/resume.pdf";
 
-EDUCATION
-- Stanford University: B.S. in Computer Science (GPA 3.92)
-- Advanced Web Institute: Certified Cloud Operations Specialist
-- Metropolitan Design Lab: Interface Ergonomics
+  a.download = "resume.pdf";
 
-CORE TECHNICAL SKILLS
-- JavaScript / TypeScript, Node.js, Python, FastAPI
-- React, Next.js, Recharts, Tailwind CSS, motion
-- Docker, GCP, Git, Microservices
-
-EXPERIENCE & PROJECTS
-- Quantum Ledger Dashboard: Built decentralized analytics terminal.
-- AeroForm UI Studio: Designed interactive design-to-code translator.
-- Vertex Collaborative Canvas: Implemented canvas drawing sync.
-
-Created in 2026.
-========================================
-`;
-
-  const blob = new Blob([resumeContent], { type: "text/plain" });
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement("a");
-  a.href = url;
-  a.download = `${DEVELOPER_NAME.replace(" ", "_")}_Resume.txt`;
-  document.body.appendChild(a);
   a.click();
-  document.body.removeChild(a);
-  URL.revokeObjectURL(url);
 }
+
+

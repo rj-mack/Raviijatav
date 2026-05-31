@@ -1,8 +1,3 @@
-/**
- * @license
- * SPDX-License-Identifier: Apache-2.0
- */
-
 import { ArrowUp } from "lucide-react";
 import { useEffect, useState } from "react";
 import { DEVELOPER_NAME } from "../data";

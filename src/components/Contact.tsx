@@ -1,8 +1,3 @@
-/**
- * @license
- * SPDX-License-Identifier: Apache-2.0
- */
-
 import React, { useState } from "react";
 import { Mail, Phone, MapPin, Send, MessageSquare, ShieldAlert, Github, Linkedin, Twitter, Instagram } from "lucide-react";
 import { PERSONAL_INFO } from "../data";

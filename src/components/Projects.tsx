@@ -1,8 +1,3 @@
-/**
- * @license
- * SPDX-License-Identifier: Apache-2.0
- */
-
 import React, { useRef, useState, useEffect } from "react";
 import { motion, AnimatePresence, useInView } from "motion/react";
 import { 
@@ -36,35 +31,34 @@ interface ProjectEntryWithSim extends ProjectEntry {
 const EXTENDED_PROJECTS: ProjectEntryWithSim[] = [
   {
     ...PORTFOLIO_PROJECTS[0],
-    category: "fintech",
-    fullDesc: "Quantum Ledger Dashboard is an enterprise-scale analytical monitor built for auditing decentralized data pipelines. It incorporates predictive analytics metrics, streaming state changes, and live charts, enabling operators to audit cryptographic throughput and counter threat anomalies in real-time.",
+    category: "Booking",
+    fullDesc: "A luxury salon web platform built with a modern editorial design system. Features a full services showcase, academy course section, interactive gallery with transformation previews, and a WhatsApp-integrated appointment booking flow. Appointments are managed via local storage for a seamless client experience — fully responsive and mobile-first optimized.",
     features: [
-      "Real-time ledger audit logs",
-      "Dynamic transactional throughput calculations",
-      "Threat classification intelligence system",
-      "Stress test and performance telemetry sandbox"
+      "WhatsApp appointment booking",
+      "Mobile-first optimized layout",
+      "Interactive gallery & transformations",
+      "Luxury editorial design system",
     ]
   },
   {
     ...PORTFOLIO_PROJECTS[1],
-    category: "design",
-    fullDesc: "AeroForm UI Studio is a low-code playground designed to bypass manual CSS prototyping. By transforming design elements dynamically into responsive Tailwind structures, it allows designers to customize interface ergonomics, shadows, borders, and typography speeds with instant clean-code output.",
+    category: "SS Pathcare Lab Website",
+    fullDesc: "Developed a full-Stack diagnostic lab platform using MongoDb , Express.js , React(vite),Redux, Tailwind css and Node.js user can upload prescriptions, view suggested single or multiple test packages,book lab visits or home sample collection, complete secure payments and download authenticated medical report.Implemented JWT-Based authentication and an admin panel for managing tests, packages, and user queries",
     features: [
-      "Dynamic layout customization interface",
-      "Intelligent compiler output generation",
-      "Direct code-compile copying support",
-      "Responsive pixel alignment check blocks"
+      "User Can upload prescriptions",
+      "Admin-Panel",
+      "Book slot for Test",
+      "visit to Home for collecting simple"
     ]
   },
   {
     ...PORTFOLIO_PROJECTS[2],
-    category: "collab",
-    fullDesc: "Vertex Collaborative Canvas is a modern multi-player graphic whiteboard. Built around robust synchronized pipelines, the editor accommodates vector path smoothing, multi-user avatar channels, toolsets, and immediate layout clear hooks.",
+    category: "TourToPachmarhi (MERN Stack)",
+    fullDesc: "Developed TourToPachmarhi, a comprehensive One-Stop Solution travel platform using the MERN stack specifically designed to streamline Pachmarhi tourism. The platform features a robust hotel booking system, customizable tour packages (Couple, Family, and Forest tours), and a multi-category vehicle rental module for bikes and cars. To ensure a high-end user experience, I integrated Swiper.js for dynamic content sliders and Lucide-React for a modern UI aesthetic, while managing complex backend logic and data flow using Node.js, Express.js, and MongoDB.",
     features: [
-      "Real-time mouse mapping drawing system",
-      "Multiplayer session simulation stream",
-      "Dynamic stroke and spectrum color selectors",
-      "SVG path vector optimizations"
+      "Swiper.js powered interactive UI with Lucide-React icons and mobile-first design",
+      "Multi-category vehicle rental module supporting bikes and cars",
+      "Customizable tour packages — Couple, Family & Forest tours with dynamic pricing",
     ]
   }
 ];
@@ -197,9 +191,6 @@ function LedgerSimulator() {
   );
 }
 
-/* -------------------------------------------------------------
-   SIMULATOR 2 COMPONENT: AeroForm UI Studio
-   ------------------------------------------------------------- */
 function AeroFormSimulator() {
   const [rounded, setRounded] = useState<"none" | "md" | "full">("md");
   const [color, setColor] = useState<"cyan" | "purple" | "emerald">("cyan");

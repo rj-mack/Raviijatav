@@ -19,7 +19,7 @@ export const PERSONAL_INFO: PersonalInfo = {
   instagram: "https://instagram.com/raviijatav",
 };
 
-export const BIO_TEXT = `As a versatile Full-Stack Engineer, I specialize in crafting next-generation, high-performance web systems. Powered by futuristic aesthetics and bulletproof architectures, I turn complex business challenges into seamless, reactive digital experiences. My dual passion for pixel-perfect user interfaces and robust server logic enables me to engineer solutions that are both visually captivating and mathematically efficient.`;
+export const BIO_TEXT = `Being a Full Stack Engineer with versatility, my expertise lies in developing future generation, high-performing web applications. With an aesthetic approach towards designing such web applications and strong architectural knowledge, I am able to solve difficult business problems. This is made possible by my dual interest in designing amazing user interfaces along with solid server-side programming.`;
 
 export const STATS = [
   { id: "projects", value: 20, label: "Projects Completed", suffix: "+" },
@@ -30,10 +30,10 @@ export const STATS = [
 export const TECHNICAL_SKILLS: Skill[] = [
   { name: "React / Next.js", percentage: 95 },
   { name: "TypeScript", percentage: 90 },
-  { name: "Node.js", percentage: 85 },
+  { name: "Node.js", percentage: 80 },
   { name: "Express", percentage: 80 },
   { name: "Tailwind CSS", percentage: 95 },
-  { name: "AWS", percentage: 75 },
+  { name: "AWS", percentage: 30 },
   { name: "MONGODB", percentage: 75},
   { name: "POSTGRESQL", percentage: 75 }
 ];
@@ -49,22 +49,22 @@ export const SOFT_SKILLS: SoftSkill[] = [
 ];
 export const Work_HISTORY: ExperinceEntry[] = [
   {
+     company: "Rajya Shiksha Kendra Bhopal (Education Department)",
+     role: "Mern-Stack Deveploper",
+     yearRange: "2025 April - Present",
+     description: "Work at as junior Developer"
+   },
+   {
+      company: "Mansvi Technology Bhopal",
+      role: "Mern-Stack Devploper",
+      yearRange: "Jan-2024 - june 2024",
+      description: "Design and development of full-stack web applications using MongoDB, Express, React, and Node.js (MERN stack). Developing RESTful APIs and integrating them with the React frontend."
+    },
+  {
     company: "Binary Logix Private Limited Bhopal",
     role: "Front-End Deveploper",
-    yearRange: "2023 - 2023",
-    description: "Developing and maintaining full-stack web applications using MongoDB, Express.js, React.js, and Node.js (MERN). Building scalable RESTful APIs and integrating them seamlessly with dynamic React-based frontend."
-  },
- {
-    company: "Mansvi Technology Bhopal",
-    role: "Mern-Stack Devploper",
-    yearRange: "2019 - 2023",
-    description: "Developing and maintaining full-stack web applications using MongoDB, Express.js, React.js, and Node.js (MERN). Building scalable RESTful APIs and integrating them seamlessly with dynamic React-based frontend."
-  },
- {
-    company: "Rajya Shiksha Kendra Bhopal (Education Department)",
-    role: "Mern-Stack Deveploper",
-    yearRange: "2025 April - Present",
-    description: "Work at as junior Developer"
+    yearRange: " June-2024 - 2025 March",
+    description: "Built responsive web applications using HTML, CSS, JavaScript, Bootstrap, and React.js Developed reusable UI components, improving code maintainability and development efficiency Integrated frontend applications with RESTful APIs for real-time data management Converted UI/UX designs into fully functional and mobile-responsive web pages.."
   },
 ];
 
